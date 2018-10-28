@@ -16,7 +16,7 @@ while player is False:
     print("Your Health " + str(myhealth))
     print("Computers Health " + str(pchealth))
 
- 
+
     player = input("Rock, Paper, Scissors?\n")
     print("Player chooses:", player)
 
@@ -27,7 +27,7 @@ while player is False:
         if computer == "Paper":
         	print("You lose the round,", computer, "covers", player)
         	myhealth = myhealth - 1
-        else: 
+        else:
         	print("You win the round,", player, "smashes", computer)
         	pchealth = pchealth - 1
         	
@@ -35,7 +35,7 @@ while player is False:
         if computer == "Scissors":
             print("You lose the round,", computer, "cuts", player)
             myhealth = myhealth - 1
-            
+
         else:
             print("You win the round,", player, "covers", computer)
             pchealth = pchealth - 1
@@ -49,20 +49,20 @@ while player is False:
         else:
             print("You win the round,", player, "cuts", computer)
             pchealth = pchealth - 1
-    
+
     elif player == "y":
         player = False          
-    
+
     elif player == "n":
         exit("n")
         player = True
-    
+
     elif player == "Quit":
         exit()
 
     else:
         print("Not a valid option. Check again, and check your spelling!\n")
-  
+
     if pchealth is z:
         print("You WIN!\n")
         player = input("Would you like to play again? y / n\n")
@@ -70,7 +70,7 @@ while player is False:
         myhealth = pchealth
     else:
     	player = False
-  
+
     if myhealth is z:
         print("You LOSE!\n")
         player = input("Would you like to play again? y / n\n")
@@ -79,6 +79,4 @@ while player is False:
     else:
     	player = False
 
-computer = choices[randint(0, 2)]
-    
-
+    computer = choices[randint(0, 2)]
