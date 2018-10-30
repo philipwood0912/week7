@@ -24,32 +24,39 @@ while player is False:
     print("Player chooses:", player)
 
     if (player == computer):
+        print("Computer chooses: ", computer)
         print("Tie! Live to shoot another day")
 
     elif player == "Rock":
         if computer == "Paper":
-        	print("You lose the round,", computer, "covers", player)
-        	myhealth = myhealth - 1
+            print("Computer chooses: ", computer)
+            print("You lose the round,", computer, "covers", player)
+            myhealth = myhealth - 1
         else:
-        	print("You win the round,", player, "smashes", computer)
-        	pchealth = pchealth - 1
-        	
+            print("Computer chooses: ", computer)
+            print("You win the round,", player, "smashes", computer)
+            pchealth = pchealth - 1
+
     elif player == "Paper":
         if computer == "Scissors":
+            print("Computer chooses: ", computer)
             print("You lose the round,", computer, "cuts", player)
             myhealth = myhealth - 1
 
         else:
+            print("Computer chooses: ", computer)
             print("You win the round,", player, "covers", computer)
             pchealth = pchealth - 1
          
 
     elif player == "Scissors":
         if computer == "Rock":
+            print("Computer chooses: ", computer)
             print("You lose the round,", computer, "smashes", player)
             myhealth = myhealth - 1
            
         else:
+            print("Computer chooses: ", computer)
             print("You win the round,", player, "cuts", computer)
             pchealth = pchealth - 1
 
