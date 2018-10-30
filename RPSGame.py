@@ -12,7 +12,10 @@ computer = choices[randint(0, 2)]
 
 
 while player is False:
-    print("Choose your weapon!\n")
+    print("")
+    print("=======================")
+    print("| Choose your weapon! |")
+    print("=======================")
     print("Your Health " + str(myhealth))
     print("Computers Health " + str(pchealth))
 
@@ -54,17 +57,19 @@ while player is False:
         player = False          
 
     elif player == "n":
-        exit("n")
-        player = True
-
-    elif player == "Quit":
         exit()
+
+
 
     else:
         print("Not a valid option. Check again, and check your spelling!\n")
 
     if pchealth is z:
-        print("You WIN!\n")
+        print(" ______________")
+        print("|              |")
+        print("|   You Win !  |")
+        print("|______________|")
+        print("")
         player = input("Would you like to play again? y / n\n")
         pchealth = pchealth + 3
         myhealth = pchealth
@@ -72,7 +77,11 @@ while player is False:
     	player = False
 
     if myhealth is z:
-        print("You LOSE!\n")
+        print(" ______________")
+        print("|              |")
+        print("|   You Lose   |")
+        print("|______________|")
+        print("")
         player = input("Would you like to play again? y / n\n")
         myhealth = myhealth + 3
         pchealth = myhealth
