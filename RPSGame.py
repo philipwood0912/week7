@@ -49,14 +49,13 @@ while player is False:
             print("Computer chooses:", computer)
             print("You win the round,", player, "covers", computer)
             pchealth = pchealth - 1
-         
 
     elif player == "Scissors":
         if computer == "Rock":
             print("Computer chooses:", computer)
             print("You lose the round,", computer, "smashes", player)
             myhealth = myhealth - 1
-           
+
         else:
             print("Computer chooses:", computer)
             print("You win the round,", player, "cuts", computer)
@@ -69,7 +68,7 @@ while player is False:
         print("Not a valid option. Check again, and check your spelling!\n")
 
     player = False
-    computer = choices[randint(0, 2)]   
+    computer = choices[randint(0, 2)]
 
     if pchealth is z:
         print(" ______________")
@@ -83,7 +82,7 @@ while player is False:
         if player == "y":
             player = False
         if player == "n":
-            break    
+            break
 
     if myhealth is z:
         print(" ______________")
@@ -97,4 +96,4 @@ while player is False:
         if player == "y":
             player = False
         if player == "n":
-            break 
+            break
