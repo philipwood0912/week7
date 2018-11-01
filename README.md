@@ -17,6 +17,10 @@ The rules are the same as the classic game:
 
 The computer chooses first; just follow the prompts.
 
+There is a life counter for both you and the computer. If your life hits zero, you lose. If the computers life hits zero, you win!
+
+<a href="https://docs.python.org/3/">Python Documentation</a>
+
 Built with Python 3.
 
 Enjoy!
