@@ -8,10 +8,32 @@ choices = ["Rock", "Paper", "Scissors"]
 
 player = False
 
-
-
 # make the computer pick one item at random
 computer = choices[randint(0, 2)]
+
+# Define a win or lose function
+def winorlose(status):
+    # handle win or lose with the status we pass in
+    print("Called the win or lose function")
+    print("===============================")
+    print("You", status, "!", "Would you like to play again?")
+    choice = input("Y / N:")
+
+    if choice == "y" or choice == "Y":
+        global pchealth
+        global myhealth
+        global player
+        global computer
+
+        pchealth = 3
+        myhealth = 3
+        player = False
+        computer = choices[randint(0, 2)]
+
+    elif choice == "n" or choice == "N":
+        exit()
+
+
 
 
 while player is False:
@@ -70,32 +92,8 @@ while player is False:
     player = False
     computer = choices[randint(0, 2)]
 
-# Never repeat code like this, use a function
-# Check RPSGame_function.py for proper code
-    if pchealth is z:
-        print(" ______________")
-        print("|              |")
-        print("|   You Win !  |")
-        print("|______________|")
-        print("")
-        player = input("Would you like to play again? y / n\n")
-        pchealth = pchealth + 3
-        myhealth = pchealth
-        if player == "y" or player == "Y":
-            player = False
-        if player == "n" or player == "N":
-            break
-
     if myhealth is z:
-        print(" ______________")
-        print("|              |")
-        print("|   You Lose   |")
-        print("|______________|")
-        print("")
-        player = input("Would you like to play again? y / n\n")
-        myhealth = myhealth + 3
-        pchealth = myhealth
-        if player == "y" or player == "Y":
-            player = False
-        if player == "n" or player == "N":
-            break
+        winorlose("Lost")
+
+    if pchealth is z:
+        winorlose("Win")
